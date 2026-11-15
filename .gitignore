@@ -1,0 +1,12 @@
+.DS_Store
+
+# Local tooling
+.claude/
+
+# Client brand work — deliberately NOT published.
+# These stay on this machine only; see README.
+concepts/
+shortlist/
+*.jpg
+*.png
+BRAND.md

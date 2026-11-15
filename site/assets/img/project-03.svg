@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000"
+     preserveAspectRatio="xMidYMid slice" role="img" aria-label="Placeholder — sphere and console composition">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0%" stop-color="#15110d"/>
+      <stop offset="55%" stop-color="#0d0a08"/>
+      <stop offset="100%" stop-color="#070605"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f3e0b4" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#f3e0b4" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="beam" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0%" stop-color="#f3e0b4" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#f3e0b4" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.055"/></feComponentTransfer>
+    </filter>
+  </defs>
+  <rect width="1000" height="1000" fill="url(#bg)"/>
+  <g fill="none" stroke="#c9a367" stroke-linecap="square" stroke-linejoin="miter">
+    <circle cx="500" cy="420" r="230" stroke-width="2" opacity="0.75"/>
+    <path d="M500 190 A230 230 0 0 1 500 650 Q628 420 500 190 Z" fill="url(#glow)" stroke="none"/>
+    <path d="M500 150 L500 790" stroke-width="1.2" opacity="0.4"/>
+    <path d="M250 790 L750 790" stroke-width="2" opacity="0.6"/>
+    <path d="M300 790 L300 870 M700 790 L700 870" stroke-width="1.6" opacity="0.45"/>
+    <path d="M60 940 L940 940" stroke-width="1.2" opacity="0.2"/>
+  </g>
+  <rect width="1000" height="1000" filter="url(#grain)" opacity="0.9"/>
+</svg>

@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Oreo Stylessy — Architecture &amp; Interior Design</title>
+<meta name="description" content="Oreo Stylessy is an architecture and interior design studio shaping light, space and stillness for homes, hospitality and workplaces.">
+<meta name="theme-color" content="#0a0806">
+<link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300&family=Jost:wght@200;300;400;500&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- ───────────────────────────── loader ───────────────────────────── -->
+<div class="loader" id="loader" aria-hidden="true">
+  <div class="loader__inner">
+    <svg class="loader__mark" viewBox="100 28 140 184" aria-hidden="true">
+      <g transform="translate(170 120) scale(1.14) translate(-170 -120)"
+         fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+        <line class="dr" x1="170" y1="40" x2="170" y2="198"/>
+        <path class="dr" d="M136 120 A34 34 0 0 0 204 120"/>
+        <line class="dr" x1="185" y1="120" x2="204" y2="120"/>
+        <circle class="pop" cx="170" cy="86" r="12.5" fill="currentColor" stroke="none"/>
+        <circle class="pop" cx="170" cy="172" r="7" fill="currentColor" stroke="none"/>
+      </g>
+    </svg>
+    <div class="loader__bar"><span id="loaderFill"></span></div>
+    <div class="loader__count"><span id="loaderNum">0</span><i>%</i></div>
+  </div>
+</div>
+
+<!-- ───────────────────────────── cursor ───────────────────────────── -->
+<div class="cursor" id="cursor" aria-hidden="true">
+  <span class="cursor__dot"></span>
+  <span class="cursor__ring"></span>
+  <span class="cursor__label"></span>
+</div>
+
+<!-- ───────────────────────────── header ───────────────────────────── -->
+<header class="head" id="head">
+  <a class="head__brand" href="#top" data-cursor="home">
+    <img src="assets/mark.svg" alt="" width="26" height="34">
+    <span class="head__name">
+      <b>OREO STYLESSY</b>
+      <i>Architecture &amp; Interior Design</i>
+    </span>
+  </a>
+
+  <nav class="head__nav" aria-label="Primary">
+    <a href="#work">Work</a>
+    <a href="#studio">Studio</a>
+    <a href="#services">Services</a>
+    <a href="#process">Process</a>
+  </nav>
+
+  <a class="head__cta btn-line" href="#contact" data-magnetic>
+    <span>Start a project</span>
+  </a>
+
+  <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu">
+    <span></span><span></span>
+  </button>
+</header>
+
+<!-- ───────────────────────────── full menu ───────────────────────────── -->
+<div class="menu" id="menu" hidden>
+  <nav class="menu__list" aria-label="Full">
+    <a href="#work"><em>01</em><span>Work</span></a>
+    <a href="#studio"><em>02</em><span>Studio</span></a>
+    <a href="#services"><em>03</em><span>Services</span></a>
+    <a href="#process"><em>04</em><span>Process</span></a>
+    <a href="#contact"><em>05</em><span>Contact</span></a>
+  </nav>
+  <div class="menu__foot">
+    <p>[YOUR STUDIO ADDRESS]</p>
+    <p><a href="mailto:[YOUR EMAIL]">[YOUR EMAIL]</a></p>
+  </div>
+</div>
+
+<main id="top">
+
+<!-- ───────────────────────────── hero ───────────────────────────── -->
+<section class="hero">
+  <div class="hero__bg" data-parallax="0.18">
+    <img src="assets/img/studio.svg" alt="">
+  </div>
+  <div class="hero__veil"></div>
+
+  <div class="hero__inner">
+    <p class="eyebrow" data-reveal>Architecture &amp; Interior Design</p>
+
+    <h1 class="hero__title" data-split>
+      We shape light,
+      space and stillness.
+    </h1>
+
+    <div class="hero__meta">
+      <p data-reveal data-delay="1">
+        A studio for considered interiors — residences, hospitality and
+        workplaces where every surface earns its place.
+      </p>
+      <a class="btn-line" href="#work" data-reveal data-delay="2" data-magnetic>
+        <span>See the work</span>
+      </a>
+    </div>
+  </div>
+
+  <a class="hero__scroll" href="#intro" aria-label="Scroll to content">
+    <span class="hero__scrollline"></span>
+    <span class="hero__scrolltxt">Scroll</span>
+  </a>
+</section>
+
+<!-- ───────────────────────────── marquee ───────────────────────────── -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee__track">
+    <span>Residential <i>·</i> Hospitality <i>·</i> Workplace <i>·</i> Furniture <i>·</i> Art Direction <i>·</i></span>
+    <span>Residential <i>·</i> Hospitality <i>·</i> Workplace <i>·</i> Furniture <i>·</i> Art Direction <i>·</i></span>
+  </div>
+</div>
+
+<!-- ───────────────────────────── intro ───────────────────────────── -->
+<section class="intro" id="intro">
+  <div class="intro__grid">
+    <div class="intro__text">
+      <p class="eyebrow" data-reveal>Our approach</p>
+      <h2 class="h2" data-split>
+        Every room begins
+        as a question about
+        how you want to live.
+      </h2>
+      <p class="lede" data-reveal data-delay="1">
+        We draw slowly. Proportion before palette, daylight before fixtures.
+        The result is a space that feels inevitable rather than decorated —
+        quiet enough to live in for twenty years.
+      </p>
+      <ul class="stats">
+        <li data-reveal data-delay="1"><b data-count="12">0</b><span>Years practising</span></li>
+        <li data-reveal data-delay="2"><b data-count="140" data-suffix="+">0</b><span>Spaces delivered</span></li>
+        <li data-reveal data-delay="3"><b data-count="9">0</b><span>Cities</span></li>
+      </ul>
+    </div>
+
+    <figure class="intro__fig reveal-img" data-reveal>
+      <img src="assets/img/about.svg" alt="" data-parallax="-0.08">
+      <figcaption>Replace with a studio or project photograph</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ───────────────────────────── work (horizontal) ───────────────────────────── -->
+<section class="work" id="work">
+  <div class="work__head">
+    <p class="eyebrow" data-reveal>Selected work</p>
+    <h2 class="h2" data-split>Six rooms, six questions.</h2>
+  </div>
+
+  <div class="rail" id="rail">
+    <div class="rail__sticky">
+      <div class="rail__track" id="railTrack">
+
+        <article class="card" data-cursor="view">
+          <div class="card__img"><img src="assets/img/project-01.svg" alt="Placeholder image for the Lightwell House project"></div>
+          <div class="card__meta"><em>01</em><h3>Lightwell House</h3><span>Residence · 2024</span></div>
+        </article>
+
+        <article class="card card--wide" data-cursor="view">
+          <div class="card__img"><img src="assets/img/project-02.svg" alt="Placeholder image for the Long Room project"></div>
+          <div class="card__meta"><em>02</em><h3>The Long Room</h3><span>Hospitality · 2024</span></div>
+        </article>
+
+        <article class="card" data-cursor="view">
+          <div class="card__img"><img src="assets/img/project-03.svg" alt="Placeholder image for the Eclipse Apartment project"></div>
+          <div class="card__meta"><em>03</em><h3>Eclipse Apartment</h3><span>Residence · 2023</span></div>
+        </article>
+
+        <article class="card" data-cursor="view">
+          <div class="card__img"><img src="assets/img/project-04.svg" alt="Placeholder image for the Fluted Wing project"></div>
+          <div class="card__meta"><em>04</em><h3>Fluted Wing</h3><span>Workplace · 2023</span></div>
+        </article>
+
+        <article class="card card--wide" data-cursor="view">
+          <div class="card__img"><img src="assets/img/project-05.svg" alt="Placeholder image for the Stair &amp; Arch project"></div>
+          <div class="card__meta"><em>05</em><h3>Stair &amp; Arch</h3><span>Residence · 2022</span></div>
+        </article>
+
+        <article class="card" data-cursor="view">
+          <div class="card__img"><img src="assets/img/project-06.svg" alt="Placeholder image for the Threshold Villa project"></div>
+          <div class="card__meta"><em>06</em><h3>Threshold Villa</h3><span>Residence · 2022</span></div>
+        </article>
+
+      </div>
+      <div class="rail__progress"><span id="railBar"></span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────────────────────── services ───────────────────────────── -->
+<section class="svc" id="services">
+  <div class="svc__head">
+    <p class="eyebrow" data-reveal>What we do</p>
+    <h2 class="h2" data-split>Four ways in.</h2>
+  </div>
+
+  <ul class="svc__list" id="svcList">
+    <li data-img="assets/img/project-02.svg" data-reveal>
+      <em>01</em>
+      <h3>Interior Architecture</h3>
+      <p>Planning, levels, light and joinery drawn from the shell outwards.</p>
+    </li>
+    <li data-img="assets/img/project-04.svg" data-reveal data-delay="1">
+      <em>02</em>
+      <h3>Turnkey Execution</h3>
+      <p>One contract, one site team, one person answering the phone.</p>
+    </li>
+    <li data-img="assets/img/project-03.svg" data-reveal data-delay="2">
+      <em>03</em>
+      <h3>Furniture &amp; Joinery</h3>
+      <p>Bespoke pieces detailed in-house and made with our workshop partners.</p>
+    </li>
+    <li data-img="assets/img/project-06.svg" data-reveal data-delay="3">
+      <em>04</em>
+      <h3>Art &amp; Styling</h3>
+      <p>The last ten percent — the part everybody actually remembers.</p>
+    </li>
+  </ul>
+
+  <div class="svc__peek" id="svcPeek" aria-hidden="true"><img src="" alt=""></div>
+</section>
+
+<!-- ───────────────────────────── studio ───────────────────────────── -->
+<section class="studio" id="studio">
+  <figure class="studio__fig reveal-img" data-reveal>
+    <img src="assets/img/studio.svg" alt="" data-parallax="-0.1">
+  </figure>
+  <div class="studio__text">
+    <p class="eyebrow" data-reveal>The studio</p>
+    <h2 class="h2" data-split>Small by choice.</h2>
+    <p class="lede" data-reveal data-delay="1">
+      We take on a limited number of projects a year so the people who
+      drew your plan are the people on site when it is built. No handover
+      to a delivery team, no surprises at snagging.
+    </p>
+    <blockquote class="quote" data-reveal data-delay="2">
+      <p>“They spent the first month asking about our mornings. The house
+        has worked ever since.”</p>
+      <cite>[CLIENT NAME] — [PROJECT]</cite>
+    </blockquote>
+  </div>
+</section>
+
+<!-- ───────────────────────────── process ───────────────────────────── -->
+<section class="proc" id="process">
+  <div class="proc__head">
+    <p class="eyebrow" data-reveal>How it runs</p>
+    <h2 class="h2" data-split>Four stages, no mystery.</h2>
+  </div>
+
+  <ol class="proc__list" id="procList">
+    <div class="proc__line"><span id="procFill"></span></div>
+    <li data-reveal>
+      <em>01</em>
+      <h3>Listen</h3>
+      <p>A long conversation, a site visit, and an honest budget range before
+         anything is drawn.</p>
+    </li>
+    <li data-reveal>
+      <em>02</em>
+      <h3>Draw</h3>
+      <p>Plans, elevations and material boards. You see the room before
+         a single wall moves.</p>
+    </li>
+    <li data-reveal>
+      <em>03</em>
+      <h3>Build</h3>
+      <p>Weekly site reports with photographs, so you always know what
+         changed and what it cost.</p>
+    </li>
+    <li data-reveal>
+      <em>04</em>
+      <h3>Hand over</h3>
+      <p>Styled, photographed and documented — plus a care guide for
+         every finish in the house.</p>
+    </li>
+  </ol>
+</section>
+
+<!-- ───────────────────────────── contact ───────────────────────────── -->
+<section class="cta" id="contact">
+  <div class="cta__inner">
+    <p class="eyebrow" data-reveal>Start a project</p>
+    <h2 class="cta__title" data-split>
+      Tell us about
+      the room.
+    </h2>
+
+    <div class="cta__links">
+      <a class="btn-fill" href="mailto:[YOUR EMAIL]" data-magnetic data-cursor="write">
+        <span>[YOUR EMAIL]</span>
+      </a>
+      <a class="btn-line" href="tel:[YOUR PHONE]" data-magnetic>
+        <span>[YOUR PHONE]</span>
+      </a>
+    </div>
+
+    <dl class="cta__info">
+      <div data-reveal><dt>Studio</dt><dd>[YOUR STUDIO ADDRESS]</dd></div>
+      <div data-reveal data-delay="1"><dt>Hours</dt><dd>Mon–Sat · 10:00–19:00</dd></div>
+      <div data-reveal data-delay="2"><dt>Social</dt><dd><a href="#">Instagram</a> · <a href="#">Pinterest</a></dd></div>
+    </dl>
+  </div>
+</section>
+
+</main>
+
+<!-- ───────────────────────────── footer ───────────────────────────── -->
+<footer class="foot">
+  <div class="foot__word" aria-hidden="true">OREO STYLESSY</div>
+  <div class="foot__row">
+    <p>© <span id="year">2026</span> Oreo Stylessy · Architecture &amp; Interior Design</p>
+    <p><a href="#top">Back to top</a></p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

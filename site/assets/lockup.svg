@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 320" width="340" height="320"
+     role="img" aria-label="Oreo Stylessy Architecture &amp; Interior Design — Balance — sphere &amp; cradle">
+  <defs>
+    <linearGradient id="gold" gradientUnits="userSpaceOnUse" x1="112" y1="40" x2="228" y2="200">
+      <stop offset="0%" stop-color="#7d5424"/>
+      <stop offset="28%" stop-color="#e8cf98"/>
+      <stop offset="56%" stop-color="#c49b58"/>
+      <stop offset="100%" stop-color="#6d471d"/>
+    </linearGradient>
+    <linearGradient id="goldv" gradientUnits="userSpaceOnUse" x1="170" y1="222" x2="170" y2="276">
+      <stop offset="0%" stop-color="#eed9a8"/>
+      <stop offset="50%" stop-color="#c49b58"/>
+      <stop offset="100%" stop-color="#7d5424"/>
+    </linearGradient>
+    <linearGradient id="beam" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f0dcae" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#f0dcae" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="340" height="320" fill="#000000"/>
+  <g transform="translate(170 120) scale(1.14) translate(-170 -120)"
+     fill="none" stroke="url(#gold)" stroke-width="1.45" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="170" y1="40" x2="170" y2="198"/>
+    <circle cx="170" cy="86" r="12.5" fill="url(#gold)" stroke="none"/>
+    <path d="M136 120 A34 34 0 0 0 204 120"/>
+    <line x1="185" y1="120" x2="204" y2="120"/>
+    <circle cx="170" cy="172" r="7" fill="url(#gold)" stroke="none"/>
+  </g>
+  <g text-anchor="middle" fill="url(#goldv)">
+    <text x="172" y="246" font-family="'Cormorant Garamond','Didot','Bodoni MT',Georgia,serif"
+          font-size="27" font-weight="400" letter-spacing="4.6">OREO STYLESSY</text>
+    <text x="172" y="270" font-family="'Jost','Montserrat','Helvetica Neue',Arial,sans-serif"
+          font-size="9.5" font-weight="300" letter-spacing="3.67" fill="#c9a367">ARCHITECTURE &amp; INTERIOR DESIGN</text>
+  </g>
+  <line x1="159" y1="288" x2="181" y2="288" stroke="#a8823f" stroke-width="1.1"/>
+</svg>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="100 28 140 184" width="140" height="184"
+     role="img" aria-label="Oreo Stylessy mark — Balance — sphere &amp; cradle">
+  <defs>
+    <linearGradient id="gold" gradientUnits="userSpaceOnUse" x1="112" y1="40" x2="228" y2="200">
+      <stop offset="0%" stop-color="#7d5424"/>
+      <stop offset="28%" stop-color="#e8cf98"/>
+      <stop offset="56%" stop-color="#c49b58"/>
+      <stop offset="100%" stop-color="#6d471d"/>
+    </linearGradient>
+    <linearGradient id="beam" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f0dcae" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#f0dcae" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect x="100" y="28" width="140" height="184" fill="#000000"/>
+  <g transform="translate(170 120) scale(1.14) translate(-170 -120)"
+     fill="none" stroke="url(#gold)" stroke-width="1.45" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="170" y1="40" x2="170" y2="198"/>
+    <circle cx="170" cy="86" r="12.5" fill="url(#gold)" stroke="none"/>
+    <path d="M136 120 A34 34 0 0 0 204 120"/>
+    <line x1="185" y1="120" x2="204" y2="120"/>
+    <circle cx="170" cy="172" r="7" fill="url(#gold)" stroke="none"/>
+  </g>
+</svg>

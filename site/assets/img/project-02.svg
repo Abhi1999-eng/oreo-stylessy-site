@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900" width="1400" height="900"
+     preserveAspectRatio="xMidYMid slice" role="img" aria-label="Placeholder — nested doorway in perspective">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0%" stop-color="#15110d"/>
+      <stop offset="55%" stop-color="#0d0a08"/>
+      <stop offset="100%" stop-color="#070605"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f3e0b4" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#f3e0b4" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="beam" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0%" stop-color="#f3e0b4" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#f3e0b4" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.055"/></feComponentTransfer>
+    </filter>
+  </defs>
+  <rect width="1400" height="900" fill="url(#bg)"/>
+  <g fill="none" stroke="#c9a367" stroke-linecap="square" stroke-linejoin="miter">
+    <path d="M440 760 L440 150 L960 150 L960 760" stroke-width="2" opacity="0.8"/>
+    <path d="M520 760 L520 230 L880 230 L880 760" stroke-width="1.6" opacity="0.6"/>
+    <path d="M598 760 L598 310 L802 310 L802 760" stroke-width="1.4" opacity="0.45"/>
+    <path d="M598 760 L802 760 L930 900 L470 900 Z" fill="url(#beam)" stroke="none"/>
+    <path d="M60 760 L1340 760" stroke-width="1.6" opacity="0.45"/>
+    <path d="M120 760 L120 420 M1280 760 L1280 420" stroke-width="1.2" opacity="0.25"/>
+  </g>
+  <rect width="1400" height="900" filter="url(#grain)" opacity="0.9"/>
+</svg>
